@@ -1,0 +1,654 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0 20px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+li a:hover {
+    color: rgb(255, 169, 0);
+}
+
+li:last-child {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+h2,
+p,
+li,
+a,
+input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-toggle {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-logo img {
+    width: 15rem;
+    height: 2rem;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    color: black;
+    padding: 15px 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    padding: 10rem 10rem;
+    gap: 2rem;
+}
+
+.start div h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.start-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.start-image {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 22rem;
+}
+
+.search-form {
+    display: flex;
+    width: 250px;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 50px;
+    align-items: center;
+    width: 60rem;
+    margin: auto;
+}
+
+.search-form input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 8px 15px;
+    width: 60rem;
+}
+
+.search-form button {
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-form button span {
+    display: none;
+}
+
+.search-form input:focus {
+    border: none;
+}
+
+.nav-item.active {
+    background-color: rgb(225, 225, 225);
+}
+
+.nav-item.active a {
+    color: rgb(255, 169, 0);
+}
+
+.courses-section {
+    background: rgb(250, 250, 250);
+    padding-top: 3rem;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 3rem;
+}
+
+.course-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.course-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.course-card {
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-icon {
+    font-size: 3rem;
+}
+
+.course-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(1, 118, 226);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.about-section {
+    padding: 4rem 2rem;
+    background: rgb(250, 250, 250);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-content > p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.about-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.about-feature h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-feature p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h4 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.stat p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.about-mission {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
+
+.about-mission h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-mission p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
+
+.contact-form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 8px;
+    resize: vertical;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(1, 118, 226);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: rgb(1, 118, 226);
+    color: white;
+    padding: 3rem 0 1rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 169, 0);
+}
+
+.footer-section p {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: rgb(255, 169, 0);
+    margin-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgb(255, 169, 0);
+    color: #764ba2;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+    li {
+        margin: 0 10px;
+    }
+
+    .start {
+        padding: 5rem 5rem;
+        gap: 1.5rem;
+    }
+
+    .start-image {
+        margin-left: 0;
+    }
+
+    .search-form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .nav-logo img {
+        width: 8rem;
+    }
+
+    .start-text {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .nav {
+        display: flex;
+        flex-flow: column;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    li:last-child {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .search-form {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+    .start {
+        flex-direction: column;
+        padding: 5rem 2rem;
+        gap: 1.5rem;
+    }
+
+    .start-text {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+
+    .start-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin-left: 0;
+        object-fit: contain;
+        order: 1;
+    }
+
+    #courses,
+    #courses~p,
+    .courses-container {
+        padding: 0 2rem;
+    }
+
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content > p {
+        font-size: 1rem;
+    }
+
+    .about-features {
+        gap: 1.5rem;
+    }
+
+    .about-stats {
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .stat h4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav {
+        padding: 10px 0;
+    }
+
+    li {
+        margin: 5px 10px;
+    }
+
+    li:last-child {
+        margin-left: 0;
+    }
+
+    .search-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px 0;
+    }
+
+    .search-form input {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    .search-form button {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    .start {
+        padding: 2rem 1rem;
+    }
+
+    .start-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .start-image {
+        max-width: 280px;
+    }
+
+    .courses-container {
+        padding: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .course-text {
+        padding: 0;
+    }
+
+    .about-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-feature {
+        padding: 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .stat h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-mission {
+        padding: 1.5rem;
+        border-left: 3px solid #667eea;
+    }
+}

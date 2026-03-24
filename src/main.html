@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-logo">
+            <a href="#home" class="nav-link">
+                <img src="../static/logo.png" alt="Ecourse Logo" class="logo" />
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#courses" class="nav-link">Find courses</a>
+            <button class="dropdown-toggle" id="dropdownToggle">
+                <span>Enroll</span>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#python" class="dropdown-item">
+                    <i class="fab fa-python"></i> Python Programming
+                </a>
+                <a href="#javascript" class="dropdown-item">
+                    <i class="fab fa-js"></i> JavaScript & Web Dev
+                </a>
+                <a href="#react" class="dropdown-item">
+                    <i class="fab fa-react"></i> React Development
+                </a>
+                <a href="#java" class="dropdown-item">
+                    <i class="fab fa-java"></i> Java Programming
+                </a>
+                <a href="#sql" class="dropdown-item">
+                    <i class="fab fa-database"></i> SQL & Databases
+                </a>
+                <a href="#nodejs" class="dropdown-item">
+                    <i class="fab fa-node"></i> Node.js Backend
+                </a>
+                <a href="#docker" class="dropdown-item">
+                    <i class="fab fa-docker"></i> Docker & DevOps
+                </a>
+                <a href="#ml" class="dropdown-item">
+                    <i class="fas fa-brain"></i> Machine Learning
+                </a>
+                <a href="#css" class="dropdown-item">
+                    <i class="fab fa-css3-alt"></i> CSS & UI Design
+                </a>
+                <a href="#linux" class="dropdown-item">
+                    <i class="fab fa-linux"></i> Linux Administration
+                </a>
+                <a href="#php" class="dropdown-item">
+                    <i class="fab fa-php"></i> PHP Programming
+                </a>
+                <a href="#laravel" class="dropdown-item">
+                    <i class="fab fa-laravel"></i> Laravel Framework
+                </a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+        </li>
+        <li>
+            <form method="get" onsubmit="" class="search-form">
+                <button type="submit">
+                    <span>Search</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" id="query" placeholder="Search anything..." />
+            </form>
+        </li>
+        <li class="nav-item">
+            <a href="#login" class="nav-link">Login</a>
+        </li>
+    </ul>
+
+    <div class="start">
+        <div>
+            <h2>Welcome to Ecourse</h2>
+            <p class="start-text">Your one-stop destination for online learning. Join thousands of learners discovering
+                world-class courses taught by industry experts. Start your journey to success now.</p>
+        </div>
+        <img src="../static/courses.jpg" alt="Online Learning" class="start-image" />
+    </div>
+
+    <div class="courses-section" id="courses">
+        <h2 class="course-title">Find out our courses</h2>
+        <p class="course-text">Explore our extensive catalog of courses across various subjects. Whether you're looking
+            to
+            enhance your skills, learn something new, or advance your career, we have the perfect course for you.
+            Browse through our categories and find the right course to achieve your goals.</p>
+        <div class="courses-container">
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-python" style="color: blue;"></i>
+                </div>
+                <h3>Python Programming</h3>
+                <p>Learn Python from basics to advanced. Perfect for beginners and professionals.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-js" style="color: rgb(255, 208, 0);"></i>
+                </div>
+                <h3>JavaScript & Web Dev</h3>
+                <p>Master modern JavaScript and build interactive web applications.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-react" style="color: rgb(0, 162, 255);"></i>
+                </div>
+                <h3>React Development</h3>
+                <p>Build dynamic UIs with React. Learn components, hooks, and state management.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-java" style="color: orange;"></i>
+                </div>
+                <h3>Java Programming</h3>
+                <p>Enterprise-level Java development for backends and Android apps.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-database" style="color: rgb(13, 110, 253);"></i>
+                </div>
+                <h3>SQL & Databases</h3>
+                <p>Master SQL, design databases, and optimize queries for production systems.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-node" style="color: rgb(51, 153, 51);"></i>
+                </div>
+                <h3>Node.js Backend</h3>
+                <p>Build scalable backend APIs with Node.js and Express framework.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-docker" style="color: rgb(0, 153, 204);"></i>
+                </div>
+                <h3>Docker & DevOps</h3>
+                <p>containerize applications and master modern DevOps practices.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fas fa-brain" style="color: rgb(255, 0, 127);"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Explore AI & ML with Python. Build intelligent models and predictions.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-css3-alt" style="color: rgb(51, 153, 255);"></i>
+                </div>
+                <h3>CSS & UI Design</h3>
+                <p>Create beautiful responsive websites with advanced CSS techniques.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-linux" style="color: black;"></i>
+                </div>
+                <h3>Linux Administration</h3>
+                <p>Master Linux systems, server management, and command-line tools.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-php" style="color: rgb(119, 123, 180);"></i>
+                </div>
+                <h3>PHP Programming</h3>
+                <p>Learn server-side PHP development. Build dynamic websites and web applications.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fab fa-laravel" style="color: rgb(255, 60, 51);"></i>
+                </div>
+                <h3>Laravel Framework</h3>
+                <p>Master Laravel for building elegant and scalable web applications with MVC architecture.</p>
+                <a href="#" class="course-btn">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Ecourse</h2>
+                <p>Welcome to <strong>Ecourse</strong>, your premier destination for world-class online education. Founded in 2026, we've been dedicated to making quality technical education accessible to everyone, anywhere.</p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals with years of real-world experience in their fields.</p>
+                    </div>
+
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certified Courses</h3>
+                        <p>Earn recognized certificates upon completion to boost your professional credentials.</p>
+                    </div>
+
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Learn at Your Pace</h3>
+                        <p>Study whenever and wherever you want. No fixed schedules, complete flexibility.</p>
+                    </div>
+
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated support team is always ready to help you with any questions.</p>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>50K+</h4>
+                        <p>Active Students</p>
+                    </div>
+                    <div class="stat">
+                        <h4>100+</h4>
+                        <p>Expert Courses</p>
+                    </div>
+                    <div class="stat">
+                        <h4>95%</h4>
+                        <p>Success Rate</p>
+                    </div>
+                    <div class="stat">
+                        <h4>180+</h4>
+                        <p>Countries Reached</p>
+                    </div>
+                </div>
+
+                <div class="about-mission">
+                    <h3>Our Mission</h3>
+                    <p>At Ecourse, our mission is to democratize education by providing affordable, high-quality technical courses to learners worldwide. We believe that everyone deserves access to world-class education regardless of their background or location.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Ecourse</h3>
+                <p>Ecourse is a leading online learning platform offering high-quality technical courses taught by
+                    industry experts.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Python Programming</a></li>
+                    <li><a href="#">JavaScript & Web Dev</a></li>
+                    <li><a href="#">React Development</a></li>
+                    <li><a href="#">Laravel Framework</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ecourse. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="../static/main.js"></script>
+</body>
+
+</html>
